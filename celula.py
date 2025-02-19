@@ -4,6 +4,8 @@ import configurações
 import ctypes
 import sys
 
+
+cont = 0
 class Celula:
     all = []
     contador_celulas = configurações.Contador_Posicoes
@@ -43,6 +45,9 @@ class Celula:
         Celula.contador_etiqueta = etiqueta
     
     def botao_esquerdo(self, evento):
+        global cont
+        if cont==0:
+            Celula.bombas_aleatórias(self)
         if self.isso_bomba:
             self.mostre_bomba()
         else:
@@ -52,8 +57,8 @@ class Celula:
             self.mostre_posicao()
 
             if Celula.contador_celulas == configurações.Minas:
-                ctypes.windll.user32.MessageBoxW(0, "Venceu!!!" , "Perdeu" , 0)
-
+                ctypes.windll.user32.MessageBoxW(0, "!!!Venceu!!!" , "Você venceu!" , 0)
+        cont+=1
 
         self.forma_botao.unbind('<Button-1>')
         self.forma_botao.unbind('<Button-3>')
@@ -117,15 +122,16 @@ class Celula:
             self.forma_botao.configure(
                 bg = 'SystemButtonFace'
             )
+            self.isso_talvez_bomba = False
 
     @staticmethod
-    def bombas_aleatórias():
+    def bombas_aleatórias(self):
         posicoes_escolhidas = random.sample(
             Celula.all, configurações.Minas
         )
         for posicoes_escolhida in posicoes_escolhidas:
             posicoes_escolhida.isso_bomba = True
-
+        self.isso_bomba = False
 
     def __repr__(self):
         return f"Celula({self.x},{self.y})"
