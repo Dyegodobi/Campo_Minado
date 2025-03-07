@@ -6,8 +6,9 @@ Todos os outros arquivos são apenas para o suporte de funcionamento do jogo, po
 # Regras do jogo:
  1. A cada rodada o jogador deve escolher uma casa para ser revelada, se esta casa estiver vazia, revelará o
  contador de bombas das casas adjacentes.
- 2. Caso o jogador escolha uma casa que possui uma bomba ele perde.
- 3. Caso o jogador revele todas as casas sem bombas ele ganha.
+ 2. O jogador pode marcar locais com suspeita de bomba com o botão direito do mouse.
+ 3. Caso o jogador escolha uma casa que possui uma bomba ele perde.
+ 4. Caso o jogador revele todas as casas sem bombas ele ganha. 
 
 # Link do repositório no github utilizado para esse trabalho:
 
