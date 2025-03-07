@@ -11,4 +11,4 @@ Todos os outros arquivos são apenas para o suporte de funcionamento do jogo, po
 
 # Link do repositório no github utilizado para esse trabalho:
 
-link{https://github.com/Dyegodobi/Campo_Minado}
+[Repositório](https://github.com/Dyegodobi/Campo_Minado)
