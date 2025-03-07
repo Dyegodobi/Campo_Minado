@@ -8,3 +8,7 @@ Todos os outros arquivos são apenas para o suporte de funcionamento do jogo, po
  contador de bombas das casas adjacentes.
  2. Caso o jogador escolha uma casa que possui uma bomba ele perde.
  3. Caso o jogador revele todas as casas sem bombas ele ganha.
+
+# Link do repositório no github utilizado para esse trabalho:
+
+link{https://github.com/Dyegodobi/Campo_Minado}
