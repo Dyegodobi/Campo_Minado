@@ -1,15 +1,41 @@
-# Como jogar:
+# Campo Minado
 
-O arquivo principal, o qual quando executado exibirá o jogo "Campo Minado", é o arquivo "Main.py". 
-Todos os outros arquivos são apenas para o suporte de funcionamento do jogo, portanto, não haverá retorno ao executalos.  
+## Descrição do Projeto
 
-# Regras do jogo:
- 1. A cada rodada o jogador deve escolher uma casa para ser revelada, se esta casa estiver vazia, revelará o
- contador de bombas das casas adjacentes.
- 2. O jogador pode marcar locais com suspeita de bomba com o botão direito do mouse.
- 3. Caso o jogador escolha uma casa que possui uma bomba ele perde.
- 4. Caso o jogador revele todas as casas sem bombas ele ganha. 
+Este projeto é uma implementação do clássico jogo Campo Minado, desenvolvido em Python utilizando a biblioteca `tkinter` para a interface gráfica. O objetivo do jogo é revelar todas as casas que não contêm bombas, evitando aquelas que estão minadas. O jogador pode marcar as casas que suspeita conterem bombas para ajudar na estratégia.
 
-# Link do repositório no github utilizado para esse trabalho:
+## Regras do Jogo
 
-[Repositório](https://github.com/Dyegodobi/Campo_Minado)
+1. **Revelação de Casas**: O jogador deve clicar em uma casa para revelá-la. Se a casa estiver vazia, ela exibirá o número de bombas adjacentes.
+2. **Bombas**: Se o jogador revelar uma casa que contém uma bomba, o jogo termina e ele perde.
+3. **Vitória**: O jogador vence o jogo quando todas as casas sem bombas são reveladas.
+4. **Marcação de Bombas**: O jogador pode clicar com o botão direito do mouse para marcar uma casa que ele suspeita conter uma bomba. Isso ajuda a evitar cliques acidentais em casas minadas.
+
+## Como Jogar
+
+1. **Iniciar o Jogo**: Execute o arquivo `Main.py` para iniciar o jogo.
+2. **Revelar Casas**: Clique com o botão esquerdo do mouse em uma casa para revelá-la.
+3. **Marcar Bombas**: Clique com o botão direito do mouse para marcar uma casa que você suspeita conter uma bomba.
+4. **Contador de Bombas**: O contador de bombas restantes é exibido na área esquerda da tela.
+5. **Fim do Jogo**: O jogo termina quando o jogador revela uma bomba ou quando todas as casas seguras são reveladas.
+
+## Estrutura do Código
+
+O projeto é composto pelos seguintes arquivos:
+
+- **Main.py**: Contém a lógica principal do jogo, incluindo a criação da interface gráfica e a inicialização das células do campo minado.
+- **utilidades.py**: Contém funções auxiliares para calcular a largura e altura da janela com base em porcentagens.
+- **celula.py**: Define a classe `Celula`, que representa cada casa do campo minado, incluindo a lógica de revelação, marcação e detecção de bombas.
+- **configurações.py**: Contém as configurações do jogo, como o tamanho da grade, largura e altura da janela, e o número de bombas.
+
+## Autores
+
+- **Dyego Nascimento Ferreira**
+- **Gabriel Filipi Coelho**
+- **Kayo Maldini**
+
+## Conclusão
+
+Este projeto foi desenvolvido como parte de uma avaliação acadêmica, utilizando a linguagem Python e a biblioteca `tkinter` para criar uma interface gráfica simples e funcional. O jogo foi projetado para ser intuitivo e desafiador, seguindo as regras clássicas do Campo Minado. Durante o desenvolvimento, foram realizados testes para garantir o funcionamento correto do jogo, e o código foi organizado de forma modular para facilitar a manutenção e expansão futura.
+
+Para jogar, basta executar o arquivo `Main.py` e seguir as instruções na tela. Boa sorte e divirta-se!
