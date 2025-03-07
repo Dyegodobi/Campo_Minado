@@ -110,7 +110,7 @@ class Celula:
             self.forma_botao.configure(text=self.posicoes_escondidas_comprimentobombas)
             if Celula.contador_etiqueta:
                 Celula.contador_etiqueta.configure(
-                    text=f"Posições:{Celula.contador_celulas}"
+                    text=f"Faltam:{Celula.contador_celulas-configurações.Minas} casas"
                 )
             self.forma_botao.configure(
                 bg = 'SystemButtonFace'
